@@ -299,39 +299,3 @@ void PrintFREE_BLOCK()
     }
     //  printf("---------------------------------------------------------------------------print Block_List---------------------------------------------------------------------\n");
 }
-// void PrintFREE_BLOCK(FREE_BLOCK*begin)
-// {
-//     FREE_BLOCK* ptr=begin;
-//     printf("---------------------------------------------------------------------------print List---------------------------------------------------------------------\n");
-
-//     // printf("blocksize=:%d \n",block_list_size);
-//     unsigned long block_size = block_list_size;
-//     int num = 1;
-//     while (ptr)
-//     {
-//         size_t Blocksize = ptr->size + METADATA_SIZE;
-//         int Blockbegin_malloc = (int)(ptr);
-//         int Blockend_malloc = (int)((void *)ptr + ptr->size + METADATA_SIZE);
-//         size_t ActualBlocksize = Blockend_malloc - Blockbegin_malloc;
-//         size_t Datesize = ptr->size;
-
-//         if (Blocksize != ActualBlocksize)
-//         {
-//             printf("Error!:Block%d: ", num);
-//             printf("Blocksize=%d bytes\tActualBlocksize=%d bytes\t\tDatesize=%d bytes\t\t", Blocksize, ActualBlocksize, Datesize);
-//             printf("Blockbegin_malloc=%d\tBlockend_malloc=%d\n", Blockbegin_malloc, Blockend_malloc);
-//         }
-//         else
-//         {
-//             // printf("Block%d:is Valid  ", num);
-//             // printf("Blocksize=%d bytes\tActualBlocksize=%d bytes\t\tDatesize=%d bytes\t\t", Blocksize, ActualBlocksize, Datesize);
-//             // printf("Blockbegin_malloc=%d\tBlockend_malloc=%d\n", Blockbegin_malloc, Blockend_malloc);
-//         }
-
-//         ptr = ptr->next;
-//         block_size--;
-//         num++;
-//     }
-  
-//     //  printf("---------------------------------------------------------------------------print Block_List---------------------------------------------------------------------\n");
-// }
